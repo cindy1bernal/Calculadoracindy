@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/editTextNum1"
+            android:layout_width="match_parent"
+            android:layout_height="86dp"
+            android:ems="10"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/editTextNum2"
+            android:layout_width="match_parent"
+            android:layout_height="78dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/buttontotal"
+            android:layout_width="match_parent"
+            android:layout_height="97dp"
+            android:onClick="sumar"
+            android:text="=" />
+
+        <TextView
+            android:id="@+id/textViewresulsuma"
+            android:layout_width="match_parent"
+            android:layout_height="91dp"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/textViewresultmultiplica"
+            android:layout_width="match_parent"
+            android:layout_height="96dp"
+            android:text="0" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
